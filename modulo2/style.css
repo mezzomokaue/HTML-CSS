@@ -19,3 +19,13 @@ h1#principal {
 h2 {
     color: rgb(67, 125, 235);
 }
+
+.modulo1 {
+    color: rgb(22, 161, 115);
+    font-weight: bold;
+}
+
+.modulo2{
+    color: rgb(86, 187, 153);
+    font-weight: bold;
+}
