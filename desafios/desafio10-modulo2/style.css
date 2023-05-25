@@ -1,0 +1,86 @@
+@charset "UTF-08";
+
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(132,224,173,255)
+}
+
+header {
+    background-color: rgba(26,92,57,255);
+    height: 200px;
+}
+
+header > nav {
+    margin: 10px;
+    padding-top: 35px;
+}
+
+nav > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    margin-right: 30px;
+    text-shadow: 3px 2px 7px 0px rgba(0, 0, 0, 0.253);
+}
+
+nav > a:hover {
+    text-decoration: underline;
+}
+
+article {
+    background-color: rgb(255, 255, 255);
+    width: 1450px;
+    margin: auto;
+    box-shadow: 3px 5px 7px 0px rgba(0, 0, 0, 0.315);;
+}
+
+footer {
+    background-color: rgba(26,92,57,255);
+    padding: 10px;
+    margin: 0px;
+    color: white;
+    text-align: center;
+    margin: auto;
+    box-shadow: 3px 2px 7px 0px rgba(0, 0, 0, 0.253);
+}
+
+footer > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+}
+
+footer > a:hover {
+    text-decoration: underline;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    margin-top: 0px;
+    padding: 20px;
+}
+
+h1#h1secundario {
+    color: rgba(26,92,57,255)
+}
+
+h2 {
+    text-align: left;
+    color: #298554;
+    margin-left: 15px;
+}
+
+h4 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+p {
+    text-align: justify;
+    margin: 15px;
+}
+
