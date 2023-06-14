@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+/* Demais configurações */
+
+/* Typical Device Breakpoints
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes Telas: acima de 1200px
+*/
+
+@media print{ /*IMPRESSORA*/
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body{
+        background-image: url('../imagens/back-print.jpg');
+    }
+
+    main {
+        border: 2px solid black;
+    }
+
+    main::after{
+        content: 'Essa impressão foi feito no site github.com/mezzomokaue'; /*Para adicionar uma marca de água na impressão*/
+    }
+
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+
+    img#celular {
+        display: none;
+    }
+    
+    img#tablet {
+        display: none;
+    }
+    
+    img#impressora {
+        display: block;
+    }
+    
+    img#pc {
+        display: none;
+    }
+    
+    img#tv {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){ /*TABLET*/
+    body{
+        background-image: url('../imagens/back-tablet.jpg');
+    }
+
+    img#celular {
+        display: none;
+    }
+    
+    img#tablet {
+        display: block;
+    }
+    
+    img#impressora {
+        display: none;
+    }
+    
+    img#pc {
+        display: none;
+    }
+    
+    img#tv {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){ /*DESKTOP*/
+    body{
+        background-image: url('../imagens/back-pc.jpg');
+    }
+
+    img#celular {
+        display: none;
+    }
+    
+    img#tablet {
+        display: none;
+    }
+    
+    img#impressora {
+        display: none;
+    }
+    
+    img#pc {
+        display: block;
+    }
+    
+    img#tv {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px){ /*GRANDES TELAS*/
+    body{
+        background-image: url('../imagens/back-tv.jpg');
+    }
+
+    img#celular {
+        display: none;
+    }
+    
+    img#tablet {
+        display: none;
+    }
+    
+    img#impressora {
+        display: none;
+    }
+    
+    img#pc {
+        display: none;
+    }
+    
+    img#tv {
+        display: block;
+    }
+}
+
